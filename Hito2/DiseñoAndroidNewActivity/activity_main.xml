@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+     <ImageView
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:src="@drawable/calcu">
+
+     </ImageView>
+
+        <TextView
+
+            android:id="@+id/te1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/saludo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent"
+            android:hint="@string/numero1" />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent"
+            android:hint="@string/numero2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:text="respuesta"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button1"
+
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+
+
+                android:text="pulsar" >
+
+            </Button>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="restar">
+
+            </Button>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="clean">
+
+        </Button>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="calc2">
+
+            </Button>
+            ></LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
