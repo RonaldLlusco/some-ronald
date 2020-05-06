@@ -134,10 +134,10 @@ public class custom extends AppCompatActivity implements View.OnClickListener{
                 elvadodos();
                 break;
             case R.id.btncam2:
-                sen();
+                elvadotres();
                 break;
             case R.id.btncam3:
-                tan();
+                factorial();
                 break;
             case R.id.btncam4:
                 sumn();
@@ -258,6 +258,16 @@ public class custom extends AppCompatActivity implements View.OnClickListener{
             {
               res = Math.pow(op1,op2);
             }
+            else if(ope==6)
+            {
+
+                for(Double i = op1;i<=op2;i++)
+                {
+                    res = res+i;
+                }
+
+            }
+
 
 
             pant.setText(""+res);
@@ -388,34 +398,8 @@ public class custom extends AppCompatActivity implements View.OnClickListener{
             }
 
         }
-        public void sen()
-        {
-            try {
-                String auxi = pant.getText().toString();
-                double op11 = Double.parseDouble(auxi);
-                double res = Math.sin(op11*Math.PI/180);
-                pant.setText(""+res);
-            }
-            catch (Exception A)
-            {
-                Toast.makeText(getApplicationContext(),"Ingrese datos validos",Toast.LENGTH_LONG).show();
-            }
 
-        }
-        public void tan()
-        {
-            try {
-                String auxi = pant.getText().toString();
-                double op11 = Double.parseDouble(auxi);
-                double res = Math.tan(op11*Math.PI/180);
-                pant.setText(""+res);
-            }
-            catch (Exception A)
-            {
-                Toast.makeText(getApplicationContext(),"Ingrese datos validos",Toast.LENGTH_LONG).show();
-            }
 
-        }
         public void elvadodos()
         {
 
@@ -450,24 +434,20 @@ public class custom extends AppCompatActivity implements View.OnClickListener{
         public void sumn()
         {
             try {
-                int suma=15;
-                int count=0;
-
-                //inicializamos
-                for(int i=suma;i<100;i++)
+                double fact=0;
+                String auxi = pant.getText().toString();
+                Double op11 = Double.parseDouble(auxi);
+                for(Double i = op11;i>0;i--)
                 {
-                    if(suma<100)
-                    {
-                        suma=suma+i;
-                        pant.setText(i);
-                        count++;
-                    }
+                    fact = fact+i;
                 }
+                pant.setText(""+fact);
             }
-            catch (Exception x)
+            catch (Exception a)
             {
-
+                Toast.makeText(getApplicationContext(),"Ingrese datos validos",Toast.LENGTH_LONG).show();
             }
+
 
         }
         public void elevxy()
@@ -492,17 +472,19 @@ public class custom extends AppCompatActivity implements View.OnClickListener{
             try {
                 String auxi = pant.getText().toString();
                 op1 = Double.parseDouble(auxi);
-                int fibo1,fibo2,i;
-
-                fibo1=1;
-                fibo2=1;
-
-                System.out.print(fibo1 + " ");
-                for(i=2;i<=op1;i++){
-                    pant.setText(fibo2 + " ");
-                    fibo2 = fibo1 + fibo2;
-                    fibo1 = fibo2 - fibo1;
-                }
+                  int f =0;
+                  int t1 =1;
+                  int t2;
+                  int sum =0;
+                  for(double i = 1;i<=op1;i++)
+                  {
+                      t2 = f;
+                      f = t1 +f;
+                      t1 = t2;
+                    sum = sum + t1;
+                  }
+                  pant.setText(""+sum);
+         op1=0;
             }
             catch (Exception E)
             {
@@ -513,6 +495,17 @@ public class custom extends AppCompatActivity implements View.OnClickListener{
         }
         public void sumnxy()
         {
+            try {
+
+                String auxi = pant.getText().toString();
+                op1 = Double.parseDouble(auxi);
+                pant.setText("");
+                ope=6;
+            }
+            catch (Exception a)
+            {
+                Toast.makeText(getApplicationContext(),"Ingrese datos validos",Toast.LENGTH_LONG).show();
+            }
 
         }
 }

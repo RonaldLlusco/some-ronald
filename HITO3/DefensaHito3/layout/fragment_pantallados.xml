@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding.pantallados"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    >
+
+    <ImageView
+        android:id="@+id/imgWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img2" />
+
+    <TextView
+        android:id="@+id/textTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/title2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/textDesc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/title3"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp" />
+    <TextView
+        android:id="@+id/textDesc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/title31"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutNext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnfin"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="bottom|end"
+            android:text="@string/skip"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:background="@drawable/bt_style"/>
+
+        <TextView
+            android:id="@+id/textNextWelcome"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="serif"
+            android:gravity="bottom|end"
+            android:text="@string/next"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>

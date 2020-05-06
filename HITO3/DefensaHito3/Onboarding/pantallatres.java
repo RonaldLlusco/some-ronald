@@ -163,6 +163,12 @@ public class pantallatres extends Fragment {
                         getActivity().finish();
                     }
                 }
+                if(validacion(sel,use))
+                {
+                    Toast.makeText(getActivity(),"Por favor ingresa tipo calculadora/usuario",Toast.LENGTH_SHORT).show();
+                }
+
+
 
 
 
