@@ -1,3 +1,0 @@
-rootProject.name='pruebalibreria'
-include ':app'
-include ':libtem'
